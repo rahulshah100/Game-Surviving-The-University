@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Surviving the University</title>
+	<meta charset="utf-8">
+	<style>
+		* {
+			margin: 0;
+		}
+		html,
+		body {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+		canvas {
+			display: block;
+		}
+
+    .showInstruction{
+      position: absolute;
+      color: transparent;
+      text-shadow: 0 0 2px rgb(0 0 0 / 50%);
+      font-size: 36px;
+      top: 14%;
+      left: 22%;
+      right: 2%;
+    }  
+
+    .hideInstruction{
+      display:none;
+    }
+	</style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--   Bootstrap CSS -->
+  <link rel="icon" type="image/x-icon" href="https://www.pngfind.com/pngs/m/44-441139_student-icon-transparent-background-hd-png-download.png">
+</head>
+
+<body>  
+  <!--  starting text  -->
+  <div id="strt" class="showInstruction">Click anywhere on the screen to start moving the character</div> 
+  <!-- Modal -->
+  <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Instructions:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="font-size:15px">
+          <li>Collect as many Money Bundles as you can and Avoid books.</li><li> You have 3 chances to avoid Books before the Game will be Over.</li> <li> Use arrow keys to navigate.</li>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  {{kaboom}}
+
+<!--   Bootstrap Js -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!--   To load modal on page load -->
+  <script type="text/javascript">
+      $(window).on('load', function() {
+          $('#infoModal').modal('show');
+      });
+  </script>
+</body>
+</html>
