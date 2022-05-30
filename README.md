@@ -1,7 +1,7 @@
 # Game-Surviving-The-University
 Hosted at: https://ubandme.shahrahul.repl.co/
 
-This Project is a simple Game Made in JS using the library Kaboom Js, hosted on replit. 
+This Project is a simple Game Made using the library Kaboom Js and hosted on replit. 
 
 Goal to 'Survive The University' is to dodge the books and earn as much money as possible. 
 
